@@ -16,7 +16,7 @@ nav{
   width: 100%;
   justify-content: space-between;
   background-color: #05252C;
-  border: 2px solid #197686;
+  border: 1px solid #197686;
   align-items: center;
   padding: 16px 12px;
   border-radius: 24px;
@@ -31,7 +31,7 @@ nav{
 }
 .logo-icon{
  background-color: #052F35;
- border: 2px solid #0E464F;
+ border: 1px solid #0E464F;
  border-radius: 12px;
  padding: 8px;
 }
@@ -62,7 +62,7 @@ nav{
 }
 .ticket-select{
   background-color: #041E23;
-  border: 2px solid #0E464F;
+  border: 1px solid #0E464F;
   max-width: 700px;
   margin: 0 auto;
   margin-top: 40px;
@@ -100,7 +100,7 @@ nav{
 }
 .content{
   padding: 24px;
-  border: 2px solid #0E464F;
+  border: 1px solid #0E464F;
   border-radius: 32px;
   background-color: #08252B;
   display: flex;
@@ -108,7 +108,7 @@ nav{
   gap: 32px;
 }
 .section-title{
-  border: 2px solid #07373F;
+  border: 1px solid #07373F;
   color: white;
   background: radial-gradient(57.42% 106.59% at 14.02% 32.06%, rgba(36, 160, 181, 0.20) 0%, rgba(36, 160, 181, 0.00) 100%), rgba(10, 12, 17, 0.10);
   backdrop-filter: blur(7px);
@@ -147,7 +147,7 @@ nav{
 }
 .select-box{
   padding: 16px;
-  border: 2px solid #07373F;
+  border: 1px solid #07373F;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -161,7 +161,7 @@ nav{
   cursor: pointer;
   padding: 8px;
   border-radius: 12px;
-  border: 2px solid #197686;
+  border: 1px solid #197686;
   font-family: "Roboto", serif;
 }
 .label-fill{
@@ -175,7 +175,7 @@ nav{
 }
 .radio-custom {
   width: 80px;
-  border: 2px solid #2BA4B9;
+  border: 1px solid #2BA4B9;
   background-color: #0E464F;
   border-radius: 4px;
   display: flex;
@@ -205,9 +205,21 @@ select {
   font-size: 16px;
   border: 1px solid #24A0B5;
   border-radius: 4px;
-  background-color: #0E464F;
+  background-color: #061C21;
   color: white;
   outline: none;
+}
+.nav-buttons{
+  width: 100%;
+  border: 1px solid #0E464F;
+  display: flex;
+  justify-content: space-between;
+  padding:  0 24px;
+  gap: 24px;
+}
+.nav-buttons button{
+  padding: 12px 24px;
+  width: 100%;
 }
 
 
