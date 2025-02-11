@@ -2,7 +2,7 @@ import React from 'react'
 
 const TicketSelection = () => {
   return (
-    <section className="ticket-select">
+    <form action={""} className="ticket-select">
     <div className="header">
         <div className="header-nav">
             <p className="ticket">Ticket Selection</p>
@@ -74,7 +74,7 @@ const TicketSelection = () => {
         <button className="next">Next</button>
         </div>
     </div>
- </section>
+ </form>
 
   )
 }

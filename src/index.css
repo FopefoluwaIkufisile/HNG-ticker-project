@@ -252,10 +252,26 @@ select {
   .techember{
     font-size: 48px;
   }
+  .join{
+    font-size: 14px;
+  }
   #root{
     display: flex;
     flex-direction: column;
   }
+  .ticket-select{
+    padding: 24px;
+  }
+  .nav-buttons{
+    flex-direction: column-reverse;
+    gap: 16px;
+    padding: 0;
+    border: none;
+    background: transparent;
+  }
+}
+@media(max-width:490px) {
+
 }
 
 
