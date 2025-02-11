@@ -1,20 +1,10 @@
 import React from 'react'
+import Header from "./Components/Header.jsx"
 
 const App = () => {
   return (
   <>
-   <nav>
-      <div className="logo">
-          <img src="/logo.svg" alt=""  className='logo-icon'/>
-          <img src="/ticz.svg" alt="" className='ticz' />
-      </div>
-      <div className="nav-links">
-          <p className="nav-link-text">Events</p>
-          <p className="nav-link-text">My tickets</p>
-          <p className="nav-link-text">About Project</p>
-      </div>
-      <button className="ticket-btn">MY TICKETS <img src="/arrow.svg" alt=""/></button>
-   </nav>
+  <Header />
    <section className="ticket-select">
       <div className="header">
           <div className="header-nav">
