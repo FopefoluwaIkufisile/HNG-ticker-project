@@ -37,19 +37,19 @@ const TicketSelection = () => {
             </label>
              <label className="radio-label">
              <div className="text">
-              <p>Regular Access</p>
+              <p>VIP Access</p>
               <p>20 left!</p>
              </div>
              <div className="radio">  <input type="radio" name="option" className="radio-input" value="option1"/>
-             <div className="radio-custom">Free</div></div>
+             <div className="radio-custom">$50</div></div>
             </label>
             <label className="radio-label">
             <div className="text">
-              <p>Regular Access</p>
+              <p>VIPP Access</p>
               <p>20 left!</p>
              </div>
              <div className="radio">  <input type="radio" name="option" className="radio-input" value="option1"/>
-             <div className="radio-custom">Free</div>
+             <div className="radio-custom">$150</div>
              </div>
             </label>
           </div>

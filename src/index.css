@@ -40,7 +40,7 @@ nav{
   color: white;
   gap: 16px;
   font-size: 18px;
-  font-family: 'JejuMyeongjo', serif;
+  font-family: "JejuMyeongjo", serif;
 }
 .ticket-btn{
   display: flex;
@@ -214,12 +214,48 @@ select {
   border: 1px solid #0E464F;
   display: flex;
   justify-content: space-between;
-  padding:  0 24px;
-  gap: 24px;
+  padding:  0 48px;
+  gap: 32px;
+  border-radius: 24px;
+  background-color: #041E23;
 }
 .nav-buttons button{
   padding: 12px 24px;
   width: 100%;
+  border-radius: 8px;
+  font-family: "JejuMyeongjo", serif;
+}
+.nav-buttons button:hover{
+  cursor: pointer;
+}
+.cancel{
+  border: 1px solid #24A0B5;
+  background-color: transparent;
+  color: #24A0B5;
+}
+.next{
+  border: 1px solid #24A0B5;
+  background-color: #24A0B5;
+  color: white;
+}
+@media(max-width:790px) {
+  body{
+    padding: 20px;
+  }
+  .nav-links{
+    display: none;
+  }
+  .header-nav{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .techember{
+    font-size: 48px;
+  }
+  #root{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 
