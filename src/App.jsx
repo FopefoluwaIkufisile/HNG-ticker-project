@@ -39,36 +39,36 @@ const App = () => {
           <div className="select">
             <p className="select-ticket">Select Ticket Type:</p>
             <div className="select-box">
-               <label class="radio-label label-fill">
+               <label className="radio-label label-fill">
                <div className="text">
                 <p>Regular Access</p>
                 <p>20 left!</p>
                </div>
-               <div className="radio">  <input type="radio" name="option" class="radio-input" value="option1"/>
-               <div class="radio-custom">Free</div></div>
+               <div className="radio">  <input type="radio" name="option" className="radio-input" value="option1"/>
+               <div className="radio-custom">Free</div></div>
              
               </label>
-               <label class="radio-label">
+               <label className="radio-label">
                <div className="text">
                 <p>Regular Access</p>
                 <p>20 left!</p>
                </div>
-               <div className="radio">  <input type="radio" name="option" class="radio-input" value="option1"/>
-               <div class="radio-custom">Free</div></div>
+               <div className="radio">  <input type="radio" name="option" className="radio-input" value="option1"/>
+               <div className="radio-custom">Free</div></div>
               </label>
-              <label class="radio-label">
+              <label className="radio-label">
               <div className="text">
                 <p>Regular Access</p>
                 <p>20 left!</p>
                </div>
-               <div className="radio">  <input type="radio" name="option" class="radio-input" value="option1"/>
-               <div class="radio-custom">Free</div>
+               <div className="radio">  <input type="radio" name="option" className="radio-input" value="option1"/>
+               <div className="radio-custom">Free</div>
                </div>
               </label>
             </div>
           </div>
           <div className="ticket-number">
-          <label for="number" className='ticket-num-select'> Number of Tickets</label>
+          <label htmlFor="number" className='ticket-num-select'> Number of Tickets</label>
     <select id="number">
       <option value="1">1</option>
       <option value="2">2</option>
