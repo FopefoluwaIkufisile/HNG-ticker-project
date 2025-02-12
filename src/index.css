@@ -456,6 +456,11 @@ select {
   }
   .attendee-details {
     padding: 24px;
+    width: 100%;
+  }
+  .ready{
+    padding: 24px;
+    width: 100%;
   }
   .nav-buttons {
     flex-direction: column-reverse;
@@ -463,6 +468,9 @@ select {
     padding: 0;
     border: none;
     background: transparent;
+  }
+  .ticket-img{
+  width: 100%;
   }
   .nav-buttons-upload {
     flex-direction: column-reverse;

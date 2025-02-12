@@ -23,7 +23,7 @@ const Ready = () => {
           </div>
           <div className="ticket-and-buttons">
             <div className="ticket-main">
-                <img src={Ticket} alt="" />
+                <img src={Ticket} alt="" className="ticket-img" />
             </div>
             <div className="nav-buttons">
               <button className="back">Book another Ticket</button>
