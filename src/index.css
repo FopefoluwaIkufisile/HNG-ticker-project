@@ -84,6 +84,12 @@ nav {
   justify-content: space-between;
   color: white;
 }
+.header-nav-ready{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
 .ticket {
   font-size: 32px;
 }

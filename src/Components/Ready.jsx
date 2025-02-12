@@ -15,7 +15,7 @@ const Ready = ({ setStep }) => {
   return (
     <form action={""} className="ready">
       <div className="header">
-        <div className="header-nav">
+        <div className="header-nav-ready">
           <p className="ticket">Ready</p>
           <p className="step">Step 3 / 3</p>
         </div>
