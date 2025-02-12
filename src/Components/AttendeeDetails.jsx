@@ -16,7 +16,6 @@ const AttendeeDetails = ({ setStep }) => {
   });
   const [loading, setLoading] = useState(false);
 
-  // Load saved data from localStorage on page load
   useEffect(() => {
     const savedData = JSON.parse(localStorage.getItem("attendeeDetails"));
     if (savedData) {
@@ -25,7 +24,6 @@ const AttendeeDetails = ({ setStep }) => {
     }
   }, []);
 
-  // Save form data to localStorage
   useEffect(() => {
     if (formData.name && formData.email && formData.about) {
       localStorage.setItem("attendeeDetails", JSON.stringify({ ...formData, imageURL }));
@@ -36,11 +34,11 @@ const AttendeeDetails = ({ setStep }) => {
     const file = event.target.files[0];
     if (!file) return;
 
-    setLoading(true); // Show loading state
+    setLoading(true); 
 
     const imageData = new FormData();
     imageData.append("file", file);
-    imageData.append("upload_preset", "My-Uploads"); // Change to your Cloudinary preset
+    imageData.append("upload_preset", "My-Uploads"); 
 
     try {
       const response = await fetch(
@@ -51,12 +49,12 @@ const AttendeeDetails = ({ setStep }) => {
         }
       );
       const data = await response.json();
-      setImageURL(data.secure_url); // Save Cloudinary image URL
+      setImageURL(data.secure_url); 
     } catch (error) {
       console.error("Upload error:", error);
     }
 
-    setLoading(false); // Hide loading state
+    setLoading(false); 
   };
 
   const handleInputChange = (e) => {
@@ -92,9 +90,6 @@ const AttendeeDetails = ({ setStep }) => {
       return;
     }
 
-    // Log user data when validation passes
-
-    // Proceed to next step if valid
     setStep(3);
   };
 

@@ -34,7 +34,6 @@ const TicketSelection = ({ setStep }) => {
       return;
     }
 
-    // Save data to localStorage
     localStorage.setItem("ticketDetails", JSON.stringify({ ticketType, ticketNumber }));
 
 
@@ -68,11 +67,11 @@ const TicketSelection = ({ setStep }) => {
         <div className="select">
           <p className="select-ticket">Select Ticket Type:</p>
           <div className="select-box">
-            {["Regular Access - Free", "VIP Access - $50", "VIPP Access - $150"].map((type) => (
+            {["Regular Access - Free", "VIP Access - $150", "VIPP Access - $150"].map((type) => (
               <label key={type} className="radio-label">
                 <div className="text">
                   <p>{type.split(" - ")[0]}</p>
-                  <p>20 left!</p>
+                  <p>20/52</p>
                 </div>
                 <div className="radio">
                   <input
