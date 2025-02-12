@@ -1,7 +1,7 @@
 import React from "react";
 import Ticket from "/public/ticket.svg"
 
-const Ready = () => {
+const Ready = ({setStep}) => {
   return (
     <form action={""} className="ready">
       <div className="header">
@@ -26,7 +26,7 @@ const Ready = () => {
                 <img src={Ticket} alt="" className="ticket-img" />
             </div>
             <div className="nav-buttons">
-              <button className="back">Book another Ticket</button>
+              <button className="back" onClick={() => setStep(1)}>Book another Ticket</button>
               <button className="get">Download Ticket</button>
             </div>
           </div>
