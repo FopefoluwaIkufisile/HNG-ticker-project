@@ -78,7 +78,7 @@ nav {
   justify-content: space-between;
   color: white;
 }
-.header-nav-attendee{
+.header-nav-attendee {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -179,7 +179,7 @@ nav {
   width: 158px;
 }
 .label-fill {
-  background-color: #12464E;
+  background-color: #12464e;
 }
 .text p {
   line-height: 150%;
@@ -300,13 +300,13 @@ select {
   gap: 16px;
   border-radius: 32px;
   background-color: #0e464f;
-  border: 4px solid rgba(36, 160, 181, 0.50)
+  border: 4px solid rgba(36, 160, 181, 0.5);
 }
 .drop-img {
   width: 32px;
   height: 32px;
 }
-.drop-img-preview{
+.drop-img-preview {
   width: 100%;
 }
 .drag {
@@ -351,7 +351,7 @@ select {
   border-radius: 12px;
   color: white;
 }
-.input-text::placeholder{
+.input-text::placeholder {
   color: white;
 }
 .text-area-text {
@@ -360,7 +360,7 @@ select {
   border-radius: 12px;
   height: 127px;
   padding: 12px;
-  color: grey;
+  color: white;
   outline: none;
   font-family: "Roboto", serif;
 }
@@ -375,80 +375,194 @@ select {
   background-color: transparent;
 }
 
-  .nav-buttons-upload button {
-    padding: 12px 24px;
-    width: 100%;
-    border-radius: 8px;
-    font-family: "JejuMyeongjo", serif;
-  }
-  .nav-buttons-upload button:hover {
-    cursor: pointer;
-  }
-  .back{
-    border: 1px solid #24a0b5;
-    background-color: transparent;
-    color: #24a0b5;
-  }
-  .get {
-    border: 1px solid #24a0b5;
-    background-color: #24a0b5;
-    color: white;
-  }
-  .ready {
-    background-color: #041e23;
-    border: 1px solid #0e464f;
-    max-width: 700px;
-    margin: 0 auto;
-    margin-top: 40px;
-    padding: 48px;
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
-  .progress-bar-ready{
-    width: 100%;
-    background-color: #24a0b5;
-    height: 4px;
-    border-radius: 5px;
-  }
-  .ready-content{
-      padding: 24px;
-      border-radius: 32px;
-      background-color: transparent;
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
+.nav-buttons-upload button {
+  padding: 12px 24px;
+  width: 100%;
+  border-radius: 8px;
+  font-family: "JejuMyeongjo", serif;
+}
+.nav-buttons-upload button:hover {
+  cursor: pointer;
+}
+.back {
+  border: 1px solid #24a0b5;
+  background-color: transparent;
+  color: #24a0b5;
+}
+.get {
+  border: 1px solid #24a0b5;
+  background-color: #24a0b5;
+  color: white;
+}
+.ready {
+  background-color: #041e23;
+  border: 1px solid #0e464f;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 48px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.progress-bar-ready {
+  width: 100%;
+  background-color: #24a0b5;
+  height: 4px;
+  border-radius: 5px;
+}
+.ready-content {
+  padding: 24px;
+  border-radius: 32px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.ready-box {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.ready-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: "Roboto", serif;
+  gap: 16px;
+}
+.ready-ticket {
+  font-size: 32px;
+}
+.ticket-and-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+.ticket-main {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  padding: 20px;
+  background-image: url(/public/Subtract.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 600px;
+}
+.top-section {
+  border: 1px solid #24a0b5;
+  width: 260px;
+  height: 446px;
+  padding: 14px;
+  border-radius: 16px;
+}
+.event-box {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.event-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.enter {
+  font-size: 10px;
+  color: grey;
+}
+.data {
+  font-size: 12px;
+}
+.event-image {
+  background-image: url(https://res.cloudinary.com/dvvoaudh1/image/upload/v1739384564/at1mx4szelhtkb26dvjk.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 140px;
+  height: 140px;
+  border: 4px solid rgba(36, 160, 181, 0.5);
+  border-radius: 12px;
+}
+.event-summary {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #133D44;
+  background-color: #08343C;
+  padding: 4px;
+  font-family: "Roboto", serif;
+  border-radius: 8px;
+}
+.name-and-email {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #133D44;
+}
+.ticket-type-and-number {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #133D44;
+}
+.event-name{
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  gap: 4px;
+  width: 50%;
+  border-right: 1px solid #133D44;
+}
+.event-email{
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  gap: 4px;
+  width: 50%;
+  flex-wrap: wrap;
+}
+.ticket-type{
+display: flex;
+flex-direction: column;
+padding: 4px;
+gap: 4px;
+border-right: 1px solid #133D44;
+width: 50%;
+}
+.ticket-forr{
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  gap: 4px;
+  width: 50%;
+}
+.special-request{
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  gap: 4px;
+}
 
-  }
-  .ready-box{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
-  .ready-texts{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    font-family: "Roboto", serif;
-    gap: 16px;
-  }
-  .ready-ticket{
-    font-size: 32px;
-  }
-  .ticket-and-buttons{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-  .ticket-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 32px 21px;
-  }
-
+.techember-ready {
+  font-size: 34px;
+  font-family: "Road Rage", serif;
+}
+.address {
+  font-size: 10px;
+}
+.date {
+  font-size: 10px;
+}
+.qr-code {
+  background-image: url(/public/BarCode.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
 @media (max-width: 790px) {
   body {
     padding: 20px;
@@ -456,16 +570,16 @@ select {
   .nav-links {
     display: none;
   }
-  .ticket-btn{
+  .ticket-btn {
     padding: 12px 16px;
   }
   .header-nav {
     flex-direction: column;
     align-items: flex-start;
   }
- .ticket{
-  font-size: 24px;
- }
+  .ticket {
+    font-size: 24px;
+  }
   .techember {
     font-size: 48px;
   }
@@ -479,10 +593,10 @@ select {
   .ticket-select {
     padding: 24px;
   }
-  .select-box{
+  .select-box {
     flex-direction: column;
   }
-  .radio-label{
+  .radio-label {
     width: 100%;
     text-align: left;
     justify-content: left;
@@ -492,7 +606,7 @@ select {
     padding: 24px;
     width: 100%;
   }
-  .ready{
+  .ready {
     padding: 24px;
     width: 100%;
   }
@@ -503,8 +617,8 @@ select {
     border: none;
     background: transparent;
   }
-  .ticket-img{
-  width: 100%;
+  .ticket-img {
+    width: 100%;
   }
   .nav-buttons-upload {
     flex-direction: column-reverse;

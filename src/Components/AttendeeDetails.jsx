@@ -6,15 +6,17 @@ const AttendeeDetails = ({ setStep }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    about: "",
   });
   const [errors, setErrors] = useState({
     name: "",
     email: "",
     imageURL: "",
+    about: "",
   });
   const [loading, setLoading] = useState(false);
 
-  // Load saved data from LocalStorage on page load
+  // Load saved data from localStorage on page load
   useEffect(() => {
     const savedData = JSON.parse(localStorage.getItem("attendeeDetails"));
     if (savedData) {
@@ -23,9 +25,9 @@ const AttendeeDetails = ({ setStep }) => {
     }
   }, []);
 
-  // Save form data to LocalStorage
+  // Save form data to localStorage
   useEffect(() => {
-    if (formData.name && formData.email) {
+    if (formData.name && formData.email && formData.about) {
       localStorage.setItem("attendeeDetails", JSON.stringify({ ...formData, imageURL }));
     }
   }, [formData, imageURL]);
@@ -36,16 +38,16 @@ const AttendeeDetails = ({ setStep }) => {
 
     setLoading(true); // Show loading state
 
-    const formData = new FormData();
-    formData.append("file", file);
-    formData.append("upload_preset", "My-Uploads"); // Change to your Cloudinary preset
+    const imageData = new FormData();
+    imageData.append("file", file);
+    imageData.append("upload_preset", "My-Uploads"); // Change to your Cloudinary preset
 
     try {
       const response = await fetch(
         "https://api.cloudinary.com/v1_1/dvvoaudh1/image/upload",
         {
           method: "POST",
-          body: formData,
+          body: imageData,
         }
       );
       const data = await response.json();
@@ -66,7 +68,7 @@ const AttendeeDetails = ({ setStep }) => {
     
     // Validate form fields
     let valid = true;
-    const newErrors = { name: "", email: "", imageURL: "" };
+    const newErrors = { name: "", email: "", imageURL: "", about: "" };
 
     if (!formData.name) {
       newErrors.name = "Name is required!";
@@ -80,6 +82,10 @@ const AttendeeDetails = ({ setStep }) => {
       newErrors.imageURL = "Profile photo is required!";
       valid = false;
     }
+    if (!formData.about) {
+      newErrors.about = "Please provide details about the project!";
+      valid = false;
+    }
 
     if (!valid) {
       setErrors(newErrors);
@@ -87,11 +93,6 @@ const AttendeeDetails = ({ setStep }) => {
     }
 
     // Log user data when validation passes
-    console.log({
-      name: formData.name,
-      email: formData.email,
-      imageURL,
-    });
 
     // Proceed to next step if valid
     setStep(3);
@@ -150,7 +151,18 @@ const AttendeeDetails = ({ setStep }) => {
             />
             {errors.email && <p className="error-message">{errors.email}</p>}
           </div>
-        </div>
+          <div className="about">
+            <label htmlFor="about">About the Project</label>
+            <textarea
+              name="about"
+              className="text-area-text"
+              placeholder="Tell us about your project"
+              value={formData.about}
+              onChange={handleInputChange}
+            />
+            {errors.about && <p className="error-message">{errors.about}</p>}
+          </div>
+          </div>
         <div className="nav-buttons-upload">
           <button type="button" className="back" onClick={() => setStep(1)}>Back</button>
           <button type="submit" className="get">Get my free ticket</button>
