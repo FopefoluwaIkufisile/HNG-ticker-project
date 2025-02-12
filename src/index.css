@@ -307,7 +307,8 @@ select {
   height: 32px;
 }
 .drop-img-preview {
-  width: 100%;
+  width: 32px;
+  height: 32px;
 }
 .drag {
   text-align: center;
