@@ -87,7 +87,9 @@ const Ready = ({ setStep }) => {
       <button className="back" onClick={() => setStep(1)}>
         Book another Ticket
       </button>
-      <button className="get">Download Ticket</button>
+      <button className="get" onClick={(e)=>{
+        e.preventDefault()
+      }}>Download Ticket</button>
     </div>
     </form>
   );
