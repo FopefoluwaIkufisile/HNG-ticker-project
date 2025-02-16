@@ -357,7 +357,7 @@ select {
   color: white;
 }
 .input-text::placeholder {
-  color: white;
+  color: grey;
 }
 .text-area-text {
   background-color: transparent;
