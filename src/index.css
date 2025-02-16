@@ -206,11 +206,6 @@ nav {
   justify-content: center;
   text-align: right;
 }
-.radio-input:checked + .radio-custom {
-  background-color: #0e464f;
-  border-color: #2ba4b9;
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
-}
 .ticket-number {
   color: white;
   display: flex;
@@ -534,6 +529,7 @@ select {
   gap: 4px;
   width: 50%;
   flex-wrap: wrap;
+overflow-wrap: anywhere;
 }
 .ticket-type{
 display: flex;
