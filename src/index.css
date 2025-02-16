@@ -184,6 +184,9 @@ nav {
   font-family: "Roboto", serif;
   width: 158px;
 }
+.radio-label:has(input:checked){
+  background-color: #197686;
+}
 .label-fill {
   background-color: #12464e;
 }
