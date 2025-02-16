@@ -84,7 +84,9 @@ const Ready = ({ setStep }) => {
         </div>
       </div>
       <div className="nav-buttons">
-      <button className="back" onClick={() => setStep(1)}>
+      <button className="back" onClick={
+        () => {setStep(1); localStorage.clear(); }
+        }>
         Book another Ticket
       </button>
       <button className="get" onClick={(e)=>{
