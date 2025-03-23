@@ -1,9 +1,24 @@
 import React from "react";
 import Logo from "/public/logo.svg";
-import Ticz from "/public/ticz.svg";
+import Ticz from "/ticz.svg";
 import Arrow from "/public/arrow.svg";
 
-const Header = () => {
+const Header = ({setAbout, setStep, setTicket}) => {
+  const clickForAbout = () => {
+    setAbout(true);
+    setStep(0)
+    setTicket(false)
+}
+  const clickForMain = () => {
+    setAbout(false);
+    setStep(1);
+    setTicket(false);
+}
+  const clickForTickets = () => {
+    setAbout(false);
+    setStep(0)
+    setTicket(true);
+}
   return (
     <nav>
       <div className="logo">
@@ -11,9 +26,9 @@ const Header = () => {
         <img src={Ticz} alt="Ticz" className="ticz" />
       </div>
       <div className="nav-links">
-        <p className="nav-link-text">Events</p>
-        <p className="nav-link-text">My tickets</p>
-        <p className="nav-link-text">About Project</p>
+        <p className="nav-link-text" onClick={clickForMain}>Events</p>
+        <p className="nav-link-text" onClick={clickForTickets}>My tickets</p>
+        <p className="nav-link-text" onClick={clickForAbout}>About Project</p>
       </div>
       <button className="ticket-btn">
         MY TICKETS <img src={Arrow} alt="" />

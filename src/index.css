@@ -11,6 +11,11 @@ body {
   min-height: 100vh;
   padding: 0 120px;
 }
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 nav {
   display: flex;
   width: 100%;
@@ -34,6 +39,9 @@ nav {
   border: 1px solid #0e464f;
   border-radius: 12px;
   padding: 8px;
+}
+.nav-link-text {
+  cursor: pointer;
 }
 .nav-links {
   display: flex;
@@ -84,7 +92,7 @@ nav {
   justify-content: space-between;
   color: white;
 }
-.header-nav-ready{
+.header-nav-ready {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -184,7 +192,7 @@ nav {
   font-family: "Roboto", serif;
   width: 158px;
 }
-.radio-label:has(input:checked){
+.radio-label:has(input:checked) {
   background-color: #197686;
 }
 .label-fill {
@@ -498,8 +506,8 @@ select {
 .event-summary {
   display: flex;
   flex-direction: column;
-  border: 1px solid #133D44;
-  background-color: #08343C;
+  border: 1px solid #133d44;
+  background-color: #08343c;
   padding: 4px;
   font-family: "Roboto", serif;
   border-radius: 8px;
@@ -507,46 +515,46 @@ select {
 .name-and-email {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #133D44;
+  border-bottom: 1px solid #133d44;
 }
 .ticket-type-and-number {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #133D44;
+  border-bottom: 1px solid #133d44;
 }
-.event-name{
+.event-name {
   display: flex;
   flex-direction: column;
   padding: 4px;
   gap: 4px;
   width: 50%;
-  border-right: 1px solid #133D44;
+  border-right: 1px solid #133d44;
 }
-.event-email{
+.event-email {
   display: flex;
   flex-direction: column;
   padding: 4px;
   gap: 4px;
   width: 50%;
   flex-wrap: wrap;
-overflow-wrap: anywhere;
+  overflow-wrap: anywhere;
 }
-.ticket-type{
-display: flex;
-flex-direction: column;
-padding: 4px;
-gap: 4px;
-border-right: 1px solid #133D44;
-width: 50%;
+.ticket-type {
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  gap: 4px;
+  border-right: 1px solid #133d44;
+  width: 50%;
 }
-.ticket-forr{
+.ticket-forr {
   display: flex;
   flex-direction: column;
   padding: 4px;
   gap: 4px;
   width: 50%;
 }
-.special-request{
+.special-request {
   display: flex;
   flex-direction: column;
   padding: 4px;
